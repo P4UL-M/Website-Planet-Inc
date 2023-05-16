@@ -1,0 +1,84 @@
+header {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* position and size */
+    position: absolute;
+    min-height: 100px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+
+    /* Generic/White */
+    background: #ffffff;
+}
+
+header .hd-logo {
+    /* position and size */
+    margin-left: 10%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+}
+
+.hd-logo img {
+    /* position and size */
+    width: 50px;
+    height: 50px;
+}
+
+.hd-logo h1 {
+    /* position and size */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    /* identical to box height, or 117% */
+    letter-spacing: 0.1em;
+
+    /* black/900 */
+    color: #212121;
+}
+
+header .hd-nav {
+    /* flex */
+    flex: 1;
+
+    /* position and size */
+    margin-right: 10%;
+
+    /* item alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+header .hd-nav a {
+    /* position */
+
+    /* Link */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: #212121;
+}
+
+header .hd-nav a:hover {
+    /* Link */
+    transform: scale(1.2);
+    color: #212121;
+}
