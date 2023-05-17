@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.hd-spacer {
+    /* Position and size */
+    width: 100%;
+    height: 110px;
+}
+
+.hero {
+    overflow: hidden;
+    width: 100%;
+
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+}
+
+.hero .content {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+
+    /* Position and size */
+    max-width: 622px;
+}
+
+.hero .content .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.hero .content .text .heading {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.hero .content .text .heading h2 {
+    /* Paragraph/Bold/Large */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #264653;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.hero .content .text .heading h1 {
+    /* Paragraph/Overline/Large */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: -2;
+    color: #264653;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.hero .content .text p {
+    /* Paragraph/Large/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #363838;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.hero .actions {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero .actions .btn-primary {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+
+    /* Position and size */
+    min-width: 100px;
+    min-height: 48px;
+
+    /* Color and Shape */
+    background: #264653;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.hero .actions .btn-primary a {
+    /* Paragraph/Medium/Semi-bold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.hero .actions .btn-primary:hover {
+    transform: scale(1.05);
+
+    /* Color and Shape */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero .actions .btn-secondary {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+
+    /* Position and size */
+    min-width: 100px;
+    min-height: 48px;
+
+    /* Color and Shape */
+    background: #ffffff;
+    border: 1px solid #264653;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.hero .actions .btn-secondary a {
+    /* Paragraph/Medium/Semi-bold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #264653;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.hero .actions .btn-secondary:hover {
+    transform: scale(1.05);
+
+    /* Color and Shape */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
