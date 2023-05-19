@@ -9,6 +9,10 @@ body {
     height: 110px;
 }
 
+section {
+    padding-bottom: 20px;
+}
+
 .hero {
     overflow: hidden;
     width: 100%;
@@ -97,7 +101,7 @@ body {
     gap: 12px;
 }
 
-.hero .actions .btn-primary {
+.btn-primary {
     /* Auto layout */
     display: flex;
     flex-direction: row;
@@ -115,7 +119,7 @@ body {
     border-radius: 6px;
 }
 
-.hero .actions .btn-primary a {
+.btn-primary a {
     /* Paragraph/Medium/Semi-bold */
     font-family: "Inter";
     font-style: normal;
@@ -130,14 +134,14 @@ body {
     margin: 0;
 }
 
-.hero .actions .btn-primary:hover {
+.btn-primary:hover {
     transform: scale(1.05);
 
     /* Color and Shape */
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero .actions .btn-secondary {
+.btn-secondary {
     /* Auto layout */
     display: flex;
     flex-direction: row;
@@ -156,7 +160,7 @@ body {
     border-radius: 6px;
 }
 
-.hero .actions .btn-secondary a {
+.btn-secondary a {
     /* Paragraph/Medium/Semi-bold */
     font-family: "Inter";
     font-style: normal;
@@ -171,9 +175,470 @@ body {
     margin: 0;
 }
 
-.hero .actions .btn-secondary:hover {
+.btn-secondary:hover {
     transform: scale(1.05);
 
     /* Color and Shape */
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.how {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+
+    /* Position and size */
+    width: 100%;
+}
+
+.how .frame1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    /* Position and size */
+    width: 592px;
+}
+
+.how .frame1 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.how .frame1 .text h2 {
+    /* Paragraph/Bold/Large */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #0d0e0e;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.how .frame1 .text p {
+    /* Paragraph/Medium/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6b6f70;
+}
+
+.how .steps {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+
+    /* Position and size */
+    width: 592px;
+}
+
+.how .steps .step {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+.how .steps .step .pagination {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* Position and size */
+    width: 36px;
+    height: 36px;
+
+    /* Color and Shape */
+    background: #f2f7f9;
+    border-radius: 6px;
+}
+
+.how .steps .step .pagination p {
+    width: 33px;
+    height: 20px;
+
+    /* Paragraph/Small/Regular */
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #264653;
+
+    /* animation */
+    animation: pulse 1s infinite;
+}
+
+.how .steps .step.active .pagination {
+    /* Primary/100 */
+    background: #264653;
+
+    /* Color and Shape */
+    transform: scale(1.2);
+}
+
+.how .steps .step.active .pagination p {
+    /* Paragraph/Small/Regular */
+    color: #ffffff;
+}
+
+.how .steps .step .text {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.how .steps .step .text h3 {
+    /* Paragraph/Bold/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #0d0e0e;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.how .steps .step .text p {
+    /* Paragraph/Medium/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6b6f70;
+}
+
+.stats {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 112px;
+    gap: 10px;
+
+    /* Color and Shape */
+    background: #f8f8f8;
+}
+
+.stats .content {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 16px;
+
+    /* Position and size */
+    width: 100%;
+}
+
+.stats .content .stat {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+
+    /* Generic/White */
+    background: #ffffff;
+
+    /* Drop shadow/Small */
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
+    border-radius: 8px;
+
+    /* Position and size */
+    flex: 1;
+}
+
+.stats .content .stat:hover {
+    /* Drop shadow/Small */
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.2), 0px 1px 2px -1px rgba(16, 24, 40, 0.2);
+}
+
+.stats .content .stat .icon {
+    /* Position and size */
+    width: 48px;
+    height: 48px;
+
+    /* Color and Shape */
+    background: #f2f7f9;
+    border-radius: 6px;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats .content .stat .text {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    /* Position and size */
+    flex: 1;
+    align-items: stretch;
+}
+
+.stats .content .stat .text h3 {
+    /* Paragraph/Small/Medium */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+
+    /* Color and Shape */
+    color: #6b6f70;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.stats .content .stat .text .label-badge {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 16px;
+
+    /* Position and size */
+    flex: 1;
+}
+
+.stats .content .stat .text .label-badge p {
+    /* Heading/H3/Semibold/Dektop */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+
+    /* Color and Shape */
+    color: #0d0e0e;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.stats .content .stat .text .label-badge div {
+    /* Paragraph/Small/Medium */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* Color and Shape */
+    border-radius: 24px;
+
+    /* Position and size */
+    padding: 8px 16px;
+}
+
+.stats .content .stat .text .label-badge .success {
+    /* Color and Shape */
+    color: #22c55e;
+    background-color: #f0fdf4;
+}
+
+.stats .content .stat .text .label-badge .warning {
+    /* Color and Shape */
+    color: #f59e0b;
+    background-color: #fef8f1;
+}
+
+.stats .content .stat .text .label-badge .danger {
+    /* Color and Shape */
+    color: #ef4444;
+    background-color: #fef2f2;
+}
+
+/* stats responsive */
+@media (max-width: 1040px) {
+    .stats .content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .stats {
+        padding: 64px 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        padding: 64px 32px;
+    }
+}
+
+.newsletter {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 112px;
+    gap: 10px;
+
+    /* Color and Shape */
+    background: #ffffff;
+}
+
+.newsletter .content {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    /* Position and size */
+    width: 100%;
+}
+
+.newsletter .content .text {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    /* Position and size */
+    flex: 1;
+}
+
+.newsletter .content .text h2 {
+    /* Paragraph/Overline/Small */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #264653;
+
+    /* Position and size */
+    margin: 0;
+}
+
+.newsletter .content .text p {
+    /* Paragraph/Small/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #363838;
+}
+
+.newsletter .content .input {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0px;
+    gap: 16px;
+
+    /* Position and size */
+    flex: 1;
+}
+
+.newsletter .content .input input {
+    /* Paragraph/Small/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* Color and Shape */
+    background: #ffffff;
+    /* Neutral/200 */
+    border: 1px solid #e1e2e3;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 16px 24px;
+
+    /* Position and size */
+    flex: 1;
+}
+
+.newsletter .content .input input:focus {
+    /* Color and Shape */
+    outline-style: solid;
+    outline-color: #264653;
+}
+
+@media (max-width: 1040px) {
+    .newsletter {
+        padding: 64px 150px;
+    }
+
+    .newsletter .content .input {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        padding: 64px 32px;
+    }
+
+    .newsletter .content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .newsletter .content .input {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 16px;
+    }
 }
