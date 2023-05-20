@@ -184,7 +184,6 @@ header .hd-nav .icon {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px;
 
     /* Position and size */
     min-width: 100px;
@@ -209,6 +208,7 @@ header .hd-nav .icon {
 
     /* Position and size */
     margin: 0;
+    padding: 12px 20px;
 }
 
 .btn-primary:hover {
@@ -224,7 +224,6 @@ header .hd-nav .icon {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px;
 
     /* Position and size */
     min-width: 100px;
@@ -250,6 +249,7 @@ header .hd-nav .icon {
 
     /* Position and size */
     margin: 0;
+    padding: 12px 20px;
 }
 
 .btn-secondary:hover {
