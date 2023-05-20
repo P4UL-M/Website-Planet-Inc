@@ -1,0 +1,151 @@
+table {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 112px;
+
+    /* remove outline of table */
+    border: none;
+}
+
+table tbody {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    isolation: isolate;
+
+    /* Position and size */
+    width: 100%;
+    padding: 0px 196px;
+    box-sizing: border-box;
+}
+
+table thead {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+    isolation: isolate;
+
+    /* Position and size */
+    width: 100%;
+    padding: 0px 196px;
+    box-sizing: border-box;
+}
+
+table thead tr {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+    margin-top: 45px;
+    isolation: isolate;
+
+    /* Color */
+    background: #ffffff;
+
+    /* Position and size */
+    width: 100%;
+}
+
+table thead tr th {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    padding: 0px 45px;
+
+    /* Position and size */
+    width: 100%;
+}
+
+th h2 {
+    /* Paragraph/Overline/Large */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: -2;
+    color: #264653;
+
+    /* Position and size */
+    margin: 0px;
+}
+
+th h3 {
+    /* Paragraph/Bold/Large */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #264653;
+
+    /* Position and size */
+    margin: 0px;
+}
+
+table tr {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+    isolation: isolate;
+
+    /* Color */
+    background: #ffffff;
+
+    /* Position and size */
+    width: 100%;
+}
+
+table tr td {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 18px;
+    padding: 45px;
+
+    /* Position and size */
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    /* Position and size */
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+td a {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 18px;
+
+    /* Position and size */
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+td:hover a .planet {
+    /* Position and size */
+    transform: scale(1.01);
+    filter: drop-shadow(30px 30px 25px rgba(0, 0, 0, 0.5));
+}
