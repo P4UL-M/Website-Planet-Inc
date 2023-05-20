@@ -65,8 +65,8 @@
 
 .planet {
     /* Position and size */
-    width: 532px;
-    height: 532px;
+    flex: 1;
+    aspect-ratio: 1/1;
     margin-top: 50px;
     margin-bottom: 80px;
 
