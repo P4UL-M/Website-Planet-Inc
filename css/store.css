@@ -18,6 +18,7 @@ table tbody {
     align-items: center;
     gap: 19px;
     isolation: isolate;
+    min-width: 1200px;
 
     /* Position and size */
     width: 100%;
@@ -142,10 +143,67 @@ td a {
     /* Position and size */
     width: 100%;
     aspect-ratio: 1/1;
+
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+td a .planet {
+    /* Position and size */
+    transition: all 0.3s ease-in-out;
 }
 
 td:hover a .planet {
     /* Position and size */
     transform: scale(1.01);
     filter: drop-shadow(30px 30px 25px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1100px) {
+    table tr {
+        gap: 0px;
+    }
+
+    table thead {
+        padding: 0px;
+    }
+
+    table tbody {
+        min-width: 750px;
+        padding: 0px 0px;
+    }
+
+    table tr td {
+        padding: 45px 25px;
+    }
+}
+
+@media (max-width: 800px) {
+    table tr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table tbody {
+        min-width: 400px;
+        padding: 0px 0px;
+    }
+
+    table tr td {
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    td a {
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        box-sizing: border-box;
+        padding: 10px 10px;
+    }
 }
