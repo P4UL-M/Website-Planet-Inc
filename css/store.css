@@ -18,7 +18,7 @@ table tbody {
     align-items: center;
     gap: 19px;
     isolation: isolate;
-    min-width: 1200px;
+    min-width: 1400px;
 
     /* Position and size */
     width: 100%;
@@ -160,6 +160,17 @@ td:hover a .planet {
     /* Position and size */
     transform: scale(1.01);
     filter: drop-shadow(30px 30px 25px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1300px) {
+    table tbody {
+        min-width: 1000px;
+        padding: 0px 0px;
+    }
+
+    table tr td {
+        padding: 45px 25px;
+    }
 }
 
 @media (max-width: 1100px) {
