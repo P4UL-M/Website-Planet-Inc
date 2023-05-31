@@ -33,7 +33,7 @@ section {
     text-align: center;
 }
 
-.textcontainer {
+.hd-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,10 +41,107 @@ section {
     gap: 16px;
 }
 
-.imgcontainer {
+.cards {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.cards > .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.cards > .card > img {
+    height: 408px;
+    width: 384px;
+
+    resize: both;
+    overflow: auto;
+}
+
+.card .social-links > a > i {
+    width: 20px;
+    height: 20px;
+}
+
+.card .social-links > a > i {
+    text-decoration: none;
+    color: #6b6f70;
+}
+
+.card > .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.card > .text > h3 {
+    /* Paragraph/Medium/Medium */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d0e0e;
+
+    /* Positioning */
+    margin: 0px;
+}
+
+.card > .text > p {
+    /* Paragraph/Small/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b6f70;
+
+    /* Positioning */
+    margin: 0px;
+}
+
+@media (max-width: 1250px) {
+    section {
+        padding: 64px 64px;
+    }
+
+    .cards > .card > img {
+        height: 408px;
+        width: 384px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 769px) {
+    .cards > .card > img {
+        width: 334px;
+        height: 354px;
+    }
 }
