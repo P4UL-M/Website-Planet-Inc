@@ -195,9 +195,6 @@ section .contenaire {
     /* Drop shadow/XXLarge */
     box-shadow: 0px 25px 50px -12px rgba(16, 24, 40, 0.25);
     border-radius: 12px;
-
-    /* Position and size */
-    max-width: 400px;
 }
 
 .card > .content {
@@ -209,7 +206,7 @@ section .contenaire {
     gap: 24px;
 
     /* Position and size */
-    width: 100%;
+    width: min-content;
     box-sizing: border-box;
 }
 
@@ -223,7 +220,7 @@ section .contenaire {
     gap: 16px;
 
     /* Position and size */
-    width: 100%;
+    width: max-content;
 }
 
 .header .hd-text {
@@ -251,7 +248,7 @@ section .contenaire {
 .header .hd-text .price {
     /* Auto layout */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     padding: 0px;
     gap: 8px;
