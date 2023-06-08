@@ -251,7 +251,7 @@ section .contenaire {
 .header .hd-text .price {
     /* Auto layout */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
     padding: 0px;
     gap: 8px;
@@ -266,6 +266,7 @@ section .contenaire {
     line-height: 44px;
     letter-spacing: -0.02em;
     color: #0d0e0e;
+    width: auto;
 
     /* Position and size */
     margin: 0px;
