@@ -43,10 +43,45 @@ function addRequest() {
 
     // Clear form inputs
     document.getElementById("request-form").reset();
+
+
+    // Save the request to localStorage
+    const requests = JSON.parse(localStorage.getItem("requests")) || [];
+    requests.push({
+        firstName,
+        lastName,
+        email,
+        country,
+        message,
+    });
+    localStorage.setItem("requests", JSON.stringify(requests));
+}
+
+function loadRequests() {
+    const requests = JSON.parse(localStorage.getItem("requests")) || [];
+    const tableBody = document.getElementById("requests-table").getElementsByTagName("tbody")[0];
+
+    // Iterate over the requests and add them to the table
+    requests.forEach((request, index) => {
+        const newRow = tableBody.insertRow();
+        newRow.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${request.firstName}</td>
+        <td>${request.lastName}</td>
+        <td>${request.email}</td>
+        <td>${request.country}</td>
+        <td>${request.message.length > 20 ? request.message.substring(0, 20) + "..." : request.message || "None"}</td>
+      `;
+    });
 }
 
 // Add event listener to form reset
 document.getElementById("request-form").addEventListener("submit", function (event) {
     event.preventDefault();
     addRequest();
+});
+
+// Load requests when the page starts
+window.addEventListener("DOMContentLoaded", function () {
+    loadRequests();
 });

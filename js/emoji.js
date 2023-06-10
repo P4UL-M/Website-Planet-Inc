@@ -4,7 +4,7 @@ function displayEmoji() {
     const flagElement = document.getElementById("emoji");
 
     if (selectedCountry === "") {
-        flagElement.innerHTML = "None";
+        flagElement.innerHTML = null;
     } else {
         const countryName = selectElement.options[selectElement.selectedIndex].value;
         const flagIcon = `<i class="flag-icon ${countryName}"></i>`;
