@@ -1,0 +1,100 @@
+.content {
+    flex-direction: row;
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.hd-header {
+    flex: 1;
+}
+
+.hd-content {
+    flex: 1;
+}
+
+.country-flag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.country-flag .flag-icon {
+    margin-right: 10px;
+}
+
+fieldset {
+    border: none;
+    flex-direction: row;
+    display: flex;
+    padding: 0 0 12px 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.input-box {
+    flex-direction: column;
+    display: flex;
+}
+
+select {
+    background-color: inherit;
+    border: none;
+    border-radius: 0%;
+    flex-grow: 1;
+}
+
+.country-selector {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding-bottom: 5px;
+}
+
+#emoji {
+    margin: 0;
+}
+
+input[type="submit"] {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* Position and size */
+    min-width: 100px;
+    min-height: 48px;
+
+    /* Color and Shape */
+    background: #264653;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    /* Paragraph/Medium/Semi-bold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    /* Position and size */
+    margin: 0;
+    padding: 12px 20px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+
+    /* Color and Shape */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
