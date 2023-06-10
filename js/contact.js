@@ -20,6 +20,7 @@ function addRequest() {
     const emailCell = document.createElement("td");
     const countryCell = document.createElement("td");
     const messageCell = document.createElement("td");
+    const deleteCell = document.createElement("td");
 
     // Set cell values
     indexCell.textContent = tableBody.rows.length + 1; // Increment index for each new row
@@ -29,6 +30,9 @@ function addRequest() {
     countryCell.textContent = country;
     // make the text less than 20 characters long and add "..." to the end
     messageCell.textContent = (message.length > 20 ? message.substring(0, 20) + "..." : message) || "None";
+    deleteCell.innerHTML = `<button class="delete-btn" onclick="deleteRequest(this)">
+    <i class="fa-regular fa-trash-can"></i>
+    </button>`;
 
     // Append cells to the new row
     newRow.appendChild(indexCell);
@@ -37,6 +41,7 @@ function addRequest() {
     newRow.appendChild(emailCell);
     newRow.appendChild(countryCell);
     newRow.appendChild(messageCell);
+    newRow.appendChild(deleteCell);
 
     // Append the new row to the table body
     tableBody.appendChild(newRow);
@@ -71,9 +76,29 @@ function loadRequests() {
         <td>${request.email}</td>
         <td>${request.country}</td>
         <td>${request.message.length > 20 ? request.message.substring(0, 20) + "..." : request.message || "None"}</td>
+        <td><button class="delete-btn" onclick="deleteRequest(this)"><i class="fa-regular fa-trash-can"></i></button></td>
       `;
     });
 }
+
+function deleteRequest(deleteBtnElement) {
+    const tableRow = deleteBtnElement.parentElement.parentElement;
+    const tableBody = tableRow.parentElement;
+    const requests = JSON.parse(localStorage.getItem("requests")) || [];
+
+    // Remove the request from localStorage
+    requests.splice(tableRow.rowIndex - 1, 1);
+    localStorage.setItem("requests", JSON.stringify(requests));
+
+    // Remove the request from the table
+    tableBody.removeChild(tableRow);
+
+    // Update the index of each row
+    for (let i = 0; i < tableBody.rows.length; i++) {
+        tableBody.rows[i].cells[0].textContent = i + 1;
+    }
+}
+
 
 // Add event listener to form reset
 document.getElementById("request-form").addEventListener("submit", function (event) {

@@ -225,3 +225,19 @@ textarea:focus {
     outline: none;
     border-color: #c886ff;
 }
+
+.delete-btn:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.delete-btn:active > i {
+    transform: scale(0.9);
+}
+
+.delete-btn {
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    background: inherit;
+}
