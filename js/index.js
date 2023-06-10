@@ -1,23 +1,49 @@
 const steps = document.querySelectorAll(".step");
 
-function isInViewport(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+// function isInViewport(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
+
+// Previous function without jQuery
+
+function isInViewport(elem) {
+    var docViewTop = window.scrollY;
+    var docViewBottom = docViewTop + window.innerHeight;
+
+    var elemTop = elem.offsetTop;
+    var elemBottom = elemTop + elem.offsetHeight;
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+// function distanceFromCenterOfViewport(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+
+//     var docViewCenter = docViewTop + $(window).height() / 2;
+
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+
+//     return Math.abs(docViewCenter - elemTop);
+// }
+
+// Previous function without jQuery
+
 function distanceFromCenterOfViewport(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+    var docViewTop = window.scrollY;
+    var docViewBottom = docViewTop + window.innerHeight;
 
-    var docViewCenter = docViewTop + $(window).height() / 2;
+    var docViewCenter = docViewTop + window.innerHeight / 2;
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+    var elemTop = elem.offsetTop;
+    var elemBottom = elemTop + elem.offsetHeight;
 
     return Math.abs(docViewCenter - elemTop);
 }
@@ -58,10 +84,13 @@ const planetImages = [
 const randomImage = planetImages[Math.floor(Math.random() * planetImages.length)];
 
 const heroPlanet = document.querySelector('.planet');
-const $ball = $(heroPlanet).find('.ball');
-$ball.css('background-image', `url(${randomImage[0]})`);
+// const $ball = $(heroPlanet).find('.ball');
+const ball = heroPlanet.querySelector('.ball');
+// $ball.css('background-image', `url(${randomImage[0]})`);
+ball.style.backgroundImage = `url(${randomImage[0]})`;
 if (!randomImage[1]) {
-    $ball.removeClass('shadowed');
+    // $ball.removeClass('shadowed');
+    ball.classList.remove('shadowed');
 }
 
 // add link to hero planet id 'hero-planet-link'
