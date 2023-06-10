@@ -82,6 +82,11 @@ function loadRequests() {
 }
 
 function deleteRequest(deleteBtnElement) {
+    // make sure the user wants to delete the request
+    if (!confirm("Are you sure you want to delete this request?")) {
+        return;
+    }
+
     const tableRow = deleteBtnElement.parentElement.parentElement;
     const tableBody = tableRow.parentElement;
     const requests = JSON.parse(localStorage.getItem("requests")) || [];
