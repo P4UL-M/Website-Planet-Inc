@@ -345,4 +345,46 @@ table tbody tr:hover {
         padding: 0.5em;
         border-bottom: 1px solid #ddd;
     }
+
+    td:first-child::before {
+        content: " Index: ";
+        float: left;
+        font-weight: bold;
+    }
+
+    td:nth-child(2)::before {
+        content: " First Name: ";
+        float: left;
+        font-weight: bold;
+    }
+
+    td:nth-child(3)::before {
+        content: " Last Name: ";
+        float: left;
+        font-weight: bold;
+    }
+
+    td:nth-child(4)::before {
+        content: " Email: ";
+        float: left;
+        font-weight: bold;
+    }
+
+    td:nth-child(5)::before {
+        content: " Country: ";
+        float: left;
+        font-weight: bold;
+    }
+
+    td:nth-child(6)::before {
+        content: " Message: ";
+        float: left;
+        font-weight: bold;
+    }
+
+    td:last-child::before {
+        content: " Delete: ";
+        float: left;
+        font-weight: bold;
+    }
 }
