@@ -1,367 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Planet Inc - Contact</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/shere.css">
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Planet Inc - Contact</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/shere.css">
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
+            rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <img src="../images/logo.svg" alt="Planet Inc Logo">
-            <h1>Planet Inc</h1>
-        </div>
-        <div class="hd-nav">
-            <div class="hd-nav-content" id="nav">
-                <a href="javascript:void(0);" class="closebtn" id="nav-closebtn" onclick="navClose()">
-                    <i class="fa fa-times fa-xl"></i>
-                </a>
-                <a href="index.html" class="active">Home</a>
-                <a href="store.html">Store</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../images/logo.svg" alt="Planet Inc Logo">
+                <h1>Planet Inc</h1>
             </div>
-            <a href="javascript:void(0);" class="icon" id="nav-openbtn" onclick="navOpen()">
-                <i class="fa fa-bars fa-xl"></i>
-            </a>
-        </div>
-    </header>
-
-    <div class="hd-spacer"></div>
-
-    <section>
-        <div class="content">
-            <div class="hd-content">
-                <h1 class="title"> Contact Support </h1>
-                <p class="subtitle"> Whether you’re interested in our referral program or a custom soltuion, we’re
-                    here to help you find the right plan to support your need. Tell us about you and we’ll be in touch.
-                </p>
-                <p class="supportive-text">
-                    Looking for careers? View all job openings
-                </p>
-            </div>
-            <div class="hd-content">
-                <form id="request-form">
-                    <fieldset>
-                        <div class="input-box">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last-name" required>
-                        </div>
-                    </fieldset>
-
-                    <div class="input-box">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="company">Company:</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-
-                    <div class="input-box">
-                        <label for="country">Country:</label>
-                        <div class="country-selector">
-                            <div class="country-flag" id="emoji"></div>
-                            <select id="country" name="country" required onchange="displayEmoji()">
-                                <option value="" disabled selected>Select your country</option>
-                                <option value="flag-icon-af">Afghanistan</option>
-                                <option value="flag-icon-al">Albania</option>
-                                <option value="flag-icon-dz">Algeria</option>
-                                <option value="flag-icon-ad">Andorra</option>
-                                <option value="flag-icon-ao">Angola</option>
-                                <option value="flag-icon-ag">Antigua and Barbuda</option>
-                                <option value="flag-icon-ar">Argentina</option>
-                                <option value="flag-icon-am">Armenia</option>
-                                <option value="flag-icon-au">Australia</option>
-                                <option value="flag-icon-at">Austria</option>
-                                <option value="flag-icon-az">Azerbaijan</option>
-                                <option value="flag-icon-bs">Bahamas</option>
-                                <option value="flag-icon-bh">Bahrain</option>
-                                <option value="flag-icon-bd">Bangladesh</option>
-                                <option value="flag-icon-bb">Barbados</option>
-                                <option value="flag-icon-by">Belarus</option>
-                                <option value="flag-icon-be">Belgium</option>
-                                <option value="flag-icon-bz">Belize</option>
-                                <option value="flag-icon-bj">Benin</option>
-                                <option value="flag-icon-bt">Bhutan</option>
-                                <option value="flag-icon-bo">Bolivia</option>
-                                <option value="flag-icon-ba">Bosnia and Herzegovina</option>
-                                <option value="flag-icon-bw">Botswana</option>
-                                <option value="flag-icon-br">Brazil</option>
-                                <option value="flag-icon-bn">Brunei</option>
-                                <option value="flag-icon-bg">Bulgaria</option>
-                                <option value="flag-icon-bf">Burkina Faso</option>
-                                <option value="flag-icon-bi">Burundi</option>
-                                <option value="flag-icon-kh">Cambodia</option>
-                                <option value="flag-icon-cm">Cameroon</option>
-                                <option value="flag-icon-ca">Canada</option>
-                                <option value="flag-icon-cv">Cape Verde</option>
-                                <option value="flag-icon-cf">Central African Republic</option>
-                                <option value="flag-icon-td">Chad</option>
-                                <option value="flag-icon-cl">Chile</option>
-                                <option value="flag-icon-cn">China</option>
-                                <option value="flag-icon-co">Colombia</option>
-                                <option value="flag-icon-km">Comoros</option>
-                                <option value="flag-icon-cd">Congo (Democratic Republic of the)</option>
-                                <option value="flag-icon-cg">Congo (Republic of the)</option>
-                                <option value="flag-icon-cr">Costa Rica</option>
-                                <option value="flag-icon-hr">Croatia</option>
-                                <option value="flag-icon-cu">Cuba</option>
-                                <option value="flag-icon-cy">Cyprus</option>
-                                <option value="flag-icon-cz">Czech Republic</option>
-                                <option value="flag-icon-dk">Denmark</option>
-                                <option value="flag-icon-dj">Djibouti</option>
-                                <option value="flag-icon-dm">Dominica</option>
-                                <option value="flag-icon-do">Dominican Republic</option>
-                                <option value="flag-icon-ec">Ecuador</option>
-                                <option value="flag-icon-eg">Egypt</option>
-                                <option value="flag-icon-sv">El Salvador</option>
-                                <option value="flag-icon-gq">Equatorial Guinea</option>
-                                <option value="flag-icon-er">Eritrea</option>
-                                <option value="flag-icon-ee">Estonia</option>
-                                <option value="flag-icon-et">Ethiopia</option>
-                                <option value="flag-icon-fj">Fiji</option>
-                                <option value="flag-icon-fi">Finland</option>
-                                <option value="flag-icon-fr">France</option>
-                                <option value="flag-icon-ga">Gabon</option>
-                                <option value="flag-icon-gm">Gambia</option>
-                                <option value="flag-icon-ge">Georgia</option>
-                                <option value="flag-icon-de">Germany</option>
-                                <option value="flag-icon-gh">Ghana</option>
-                                <option value="flag-icon-gr">Greece</option>
-                                <option value="flag-icon-gd">Grenada</option>
-                                <option value="flag-icon-gt">Guatemala</option>
-                                <option value="flag-icon-gn">Guinea</option>
-                                <option value="flag-icon-gw">Guinea-Bissau</option>
-                                <option value="flag-icon-gy">Guyana</option>
-                                <option value="flag-icon-ht">Haiti</option>
-                                <option value="flag-icon-hn">Honduras</option>
-                                <option value="flag-icon-hu">Hungary</option>
-                                <option value="flag-icon-is">Iceland</option>
-                                <option value="flag-icon-in">India</option>
-                                <option value="flag-icon-id">Indonesia</option>
-                                <option value="flag-icon-ir">Iran</option>
-                                <option value="flag-icon-iq">Iraq</option>
-                                <option value="flag-icon-ie">Ireland</option>
-                                <option value="flag-icon-il">Israel</option>
-                                <option value="flag-icon-it">Italy</option>
-                                <option value="flag-icon-jm">Jamaica</option>
-                                <option value="flag-icon-jp">Japan</option>
-                                <option value="flag-icon-jo">Jordan</option>
-                                <option value="flag-icon-kz">Kazakhstan</option>
-                                <option value="flag-icon-ke">Kenya</option>
-                                <option value="flag-icon-ki">Kiribati</option>
-                                <option value="flag-icon-kp">Korea (North)</option>
-                                <option value="flag-icon-kr">Korea (South)</option>
-                                <option value="flag-icon-kw">Kuwait</option>
-                                <option value="flag-icon-kg">Kyrgyzstan</option>
-                                <option value="flag-icon-la">Laos</option>
-                                <option value="flag-icon-lv">Latvia</option>
-                                <option value="flag-icon-lb">Lebanon</option>
-                                <option value="flag-icon-ls">Lesotho</option>
-                                <option value="flag-icon-lr">Liberia</option>
-                                <option value="flag-icon-ly">Libya</option>
-                                <option value="flag-icon-li">Liechtenstein</option>
-                                <option value="flag-icon-lt">Lithuania</option>
-                                <option value="flag-icon-lu">Luxembourg</option>
-                                <option value="flag-icon-mk">North Macedonia</option>
-                                <option value="flag-icon-mg">Madagascar</option>
-                                <option value="flag-icon-mw">Malawi</option>
-                                <option value="flag-icon-my">Malaysia</option>
-                                <option value="flag-icon-mv">Maldives</option>
-                                <option value="flag-icon-ml">Mali</option>
-                                <option value="flag-icon-mt">Malta</option>
-                                <option value="flag-icon-mh">Marshall Islands</option>
-                                <option value="flag-icon-mr">Mauritania</option>
-                                <option value="flag-icon-mu">Mauritius</option>
-                                <option value="flag-icon-mx">Mexico</option>
-                                <option value="flag-icon-fm">Micronesia</option>
-                                <option value="flag-icon-md">Moldova</option>
-                                <option value="flag-icon-mc">Monaco</option>
-                                <option value="flag-icon-mn">Mongolia</option>
-                                <option value="flag-icon-me">Montenegro</option>
-                                <option value="flag-icon-ma">Morocco</option>
-                                <option value="flag-icon-mz">Mozambique</option>
-                                <option value="flag-icon-mm">Myanmar</option>
-                                <option value="flag-icon-na">Namibia</option>
-                                <option value="flag-icon-nr">Nauru</option>
-                                <option value="flag-icon-np">Nepal</option>
-                                <option value="flag-icon-nl">Netherlands</option>
-                                <option value="flag-icon-nz">New Zealand</option>
-                                <option value="flag-icon-nc">New Caledonia</option>
-                                <option value="flag-icon-ni">Nicaragua</option>
-                                <option value="flag-icon-ne">Niger</option>
-                                <option value="flag-icon-ng">Nigeria</option>
-                                <option value="flag-icon-nu">Niue</option>
-                                <option value="flag-icon-no">Norway</option>
-                                <option value="flag-icon-om">Oman</option>
-                                <option value="flag-icon-pk">Pakistan</option>
-                                <option value="flag-icon-pw">Palau</option>
-                                <option value="flag-icon-pa">Panama</option>
-                                <option value="flag-icon-pg">Papua New Guinea</option>
-                                <option value="flag-icon-py">Paraguay</option>
-                                <option value="flag-icon-pe">Peru</option>
-                                <option value="flag-icon-ph">Philippines</option>
-                                <option value="flag-icon-pl">Poland</option>
-                                <option value="flag-icon-pt">Portugal</option>
-                                <option value="flag-icon-qa">Qatar</option>
-                                <option value="flag-icon-ro">Romania</option>
-                                <option value="flag-icon-ru">Russia</option>
-                                <option value="flag-icon-rw">Rwanda</option>
-                                <option value="flag-icon-kn">Saint Kitts and Nevis</option>
-                                <option value="flag-icon-lc">Saint Lucia</option>
-                                <option value="flag-icon-vc">Saint Vincent and the Grenadines</option>
-                                <option value="flag-icon-ws">Samoa</option>
-                                <option value="flag-icon-sm">San Marino</option>
-                                <option value="flag-icon-st">Sao Tome and Principe</option>
-                                <option value="flag-icon-sa">Saudi Arabia</option>
-                                <option value="flag-icon-sn">Senegal</option>
-                                <option value="flag-icon-rs">Serbia</option>
-                                <option value="flag-icon-sc">Seychelles</option>
-                                <option value="flag-icon-sl">Sierra Leone</option>
-                                <option value="flag-icon-sg">Singapore</option>
-                                <option value="flag-icon-sk">Slovakia</option>
-                                <option value="flag-icon-si">Slovenia</option>
-                                <option value="flag-icon-sb">Solomon Islands</option>
-                                <option value="flag-icon-so">Somalia</option>
-                                <option value="flag-icon-za">South Africa</option>
-                                <option value="flag-icon-es">Spain</option>
-                                <option value="flag-icon-lk">Sri Lanka</option>
-                                <option value="flag-icon-sd">Sudan</option>
-                                <option value="flag-icon-sr">Suriname</option>
-                                <option value="flag-icon-sz">Eswatini</option>
-                                <option value="flag-icon-se">Sweden</option>
-                                <option value="flag-icon-ch">Switzerland</option>
-                                <option value="flag-icon-sy">Syria</option>
-                                <option value="flag-icon-tw">Taiwan</option>
-                                <option value="flag-icon-tj">Tajikistan</option>
-                                <option value="flag-icon-tz">Tanzania</option>
-                                <option value="flag-icon-th">Thailand</option>
-                                <option value="flag-icon-tl">Timor-Leste</option>
-                                <option value="flag-icon-tg">Togo</option>
-                                <option value="flag-icon-to">Tonga</option>
-                                <option value="flag-icon-tt">Trinidad and Tobago</option>
-                                <option value="flag-icon-tn">Tunisia</option>
-                                <option value="flag-icon-tr">Turkey</option>
-                                <option value="flag-icon-tm">Turkmenistan</option>
-                                <option value="flag-icon-tv">Tuvalu</option>
-                                <option value="flag-icon-ug">Uganda</option>
-                                <option value="flag-icon-ua">Ukraine</option>
-                                <option value="flag-icon-ae">United Arab Emirates</option>
-                                <option value="flag-icon-gb">United Kingdom</option>
-                                <option value="flag-icon-us">United States</option>
-                                <option value="flag-icon-uy">Uruguay</option>
-                                <option value="flag-icon-uz">Uzbekistan</option>
-                                <option value="flag-icon-vu">Vanuatu</option>
-                                <option value="flag-icon-va">Vatican City</option>
-                                <option value="flag-icon-ve">Venezuela</option>
-                                <option value="flag-icon-vn">Vietnam</option>
-                                <option value="flag-icon-ye">Yemen</option>
-                                <option value="flag-icon-zm">Zambia</option>
-                                <option value="flag-icon-zw">Zimbabwe</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="input-box">
-                        <label for=" message">Additional Message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="30"></textarea>
-                    </div>
-
-                    <fieldset>
-                        <input type="submit" value="Submit">
-                        <p class="disclaimer">
-                            By pressing the submit button, I agree to Planet-Inc comtacting me by email and/or
-                            phone to
-                            share opportunities exclusively available to Select or Enterprise customes. I also
-                            understand that any information I’ve shared in this form is subject to Planet-Inc
-                            Privacy
-                            Policy.
-                        </p>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-
-        <div class="content col">
-            <h1>List of requests</h1>
-            <table id="requests-table">
-                <thead>
-                    <th>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                    <td>Email</td>
-                    <td>Country</td>
-                    <td>Message</td>
-                    <td>Delete</td>
-                    </th>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <footer>
-        <div class="content">
-            <div class="link-bloc">
-                <h3>Company</h3>
-                <div class="links">
+            <div class="hd-nav">
+                <div class="hd-nav-content" id="nav">
+                    <a href="javascript:void(0);" class="closebtn"
+                        id="nav-closebtn" onclick="navClose()">
+                        <i class="fa fa-times fa-xl"></i>
+                    </a>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="store.html">Store</a>
                     <a href="about.html">About Us</a>
                     <a href="contact.html">Contact</a>
                 </div>
+                <a href="javascript:void(0);" class="icon" id="nav-openbtn"
+                    onclick="navOpen()">
+                    <i class="fa fa-bars fa-xl"></i>
+                </a>
             </div>
-            <div class="link-bloc">
-                <h3>Products</h3>
-                <div class="links">
-                    <a href="store.html">Store</a>
+        </header>
+
+        <div class="hd-spacer"></div>
+
+        <section>
+            <div class="content">
+                <div class="hd-content">
+                    <h1 class="title"> Contact Support </h1>
+                    <p class="subtitle"> Whether you’re interested in our
+                        referral program or a custom soltuion, we’re
+                        here to help you find the right plan to support your
+                        need. Tell us about you and we’ll be in touch.
+                    </p>
+                    <p class="supportive-text">
+                        Looking for careers? View all job openings
+                    </p>
                 </div>
-            </div>
-            <div class="link-bloc">
-                <h3>Legal</h3>
-                <div class="links">
-                    <a href="termsofservices.html">Terms of Service</a>
-                    <a href="privacypolicy.html">Privacy Policy</a>
-                    <a href="cookiespolicy.html">Cookie Policy</a>
-                </div>
-            </div>
-            <div class="link-bloc">
-                <h3>Follow Us</h3>
-                <div class="links">
-                    <a href="https://www.facebook.com/">Facebook</a>
-                    <a href="https://twitter.com/">Twitter</a>
-                    <a href="https://www.instagram.com/">Instagram</a>
-                    <a href="https://github.com/P4UL-M/Website-Planet-Inc">GitHub</a>
+                <div class="hd-content">
+                    <form id="request-form">
+                        <fieldset>
+                            <div class="input-box">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name"
+                                    name="first-name" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name"
+                                    name="last-name" required>
+                            </div>
+                        </fieldset>
+
+                        <div class="input-box">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="company">Company:</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="country">Country:</label>
+                            <div class="country-selector">
+                                <div class="country-flag" id="emoji"></div>
+                                <select id="country" name="country" required
+                                    onchange="displayEmoji()">
+                                    <option value disabled selected>Select your
+                                        country</option>
+                                    <option value="flag-icon-af">Afghanistan</option>
+                                    <option value="flag-icon-al">Albania</option>
+                                    <option value="flag-icon-dz">Algeria</option>
+                                    <option value="flag-icon-ad">Andorra</option>
+                                    <option value="flag-icon-ao">Angola</option>
+                                    <option value="flag-icon-ag">Antigua and
+                                        Barbuda</option>
+                                    <option value="flag-icon-ar">Argentina</option>
+                                    <option value="flag-icon-am">Armenia</option>
+                                    <option value="flag-icon-au">Australia</option>
+                                    <option value="flag-icon-at">Austria</option>
+                                    <option value="flag-icon-az">Azerbaijan</option>
+                                    <option value="flag-icon-bs">Bahamas</option>
+                                    <option value="flag-icon-bh">Bahrain</option>
+                                    <option value="flag-icon-bd">Bangladesh</option>
+                                    <option value="flag-icon-bb">Barbados</option>
+                                    <option value="flag-icon-by">Belarus</option>
+                                    <option value="flag-icon-be">Belgium</option>
+                                    <option value="flag-icon-bz">Belize</option>
+                                    <option value="flag-icon-bj">Benin</option>
+                                    <option value="flag-icon-bt">Bhutan</option>
+                                    <option value="flag-icon-bo">Bolivia</option>
+                                    <option value="flag-icon-ba">Bosnia and
+                                        Herzegovina</option>
+                                    <option value="flag-icon-bw">Botswana</option>
+                                    <option value="flag-icon-br">Brazil</option>
+                                    <option value="flag-icon-bn">Brunei</option>
+                                    <option value="flag-icon-bg">Bulgaria</option>
+                                    <option value="flag-icon-bf">Burkina Faso</option>
+                                    <option value="flag-icon-bi">Burundi</option>
+                                    <option value="flag-icon-kh">Cambodia</option>
+                                    <option value="flag-icon-cm">Cameroon</option>
+                                    <option value="flag-icon-ca">Canada</option>
+                                    <option value="flag-icon-cv">Cape Verde</option>
+                                    <option value="flag-icon-cf">Central African
+                                        Republic</option>
+                                    <option value="flag-icon-td">Chad</option>
+                                    <option value="flag-icon-cl">Chile</option>
+                                    <option value="flag-icon-cn">China</option>
+                                    <option value="flag-icon-co">Colombia</option>
+                                    <option value="flag-icon-km">Comoros</option>
+                                    <option value="flag-icon-cd">Congo
+                                        (Democratic Republic of the)</option>
+                                    <option value="flag-icon-cg">Congo (Republic
+                                        of the)</option>
+                                    <option value="flag-icon-cr">Costa Rica</option>
+                                    <option value="flag-icon-hr">Croatia</option>
+                                    <option value="flag-icon-cu">Cuba</option>
+                                    <option value="flag-icon-cy">Cyprus</option>
+                                    <option value="flag-icon-cz">Czech Republic</option>
+                                    <option value="flag-icon-dk">Denmark</option>
+                                    <option value="flag-icon-dj">Djibouti</option>
+                                    <option value="flag-icon-dm">Dominica</option>
+                                    <option value="flag-icon-do">Dominican
+                                        Republic</option>
+                                    <option value="flag-icon-ec">Ecuador</option>
+                                    <option value="flag-icon-eg">Egypt</option>
+                                    <option value="flag-icon-sv">El Salvador</option>
+                                    <option value="flag-icon-gq">Equatorial
+                                        Guinea</option>
+                                    <option value="flag-icon-er">Eritrea</option>
+                                    <option value="flag-icon-ee">Estonia</option>
+                                    <option value="flag-icon-et">Ethiopia</option>
+                                    <option value="flag-icon-fj">Fiji</option>
+                                    <option value="flag-icon-fi">Finland</option>
+                                    <option value="flag-icon-fr">France</option>
+                                    <option value="flag-icon-ga">Gabon</option>
+                                    <option value="flag-icon-gm">Gambia</option>
+                                    <option value="flag-icon-ge">Georgia</option>
+                                    <option value="flag-icon-de">Germany</option>
+                                    <option value="flag-icon-gh">Ghana</option>
+                                    <option value="flag-icon-gr">Greece</option>
+                                    <option value="flag-icon-gd">Grenada</option>
+                                    <option value="flag-icon-gt">Guatemala</option>
+                                    <option value="flag-icon-gn">Guinea</option>
+                                    <option value="flag-icon-gw">Guinea-Bissau</option>
+                                    <option value="flag-icon-gy">Guyana</option>
+                                    <option value="flag-icon-ht">Haiti</option>
+                                    <option value="flag-icon-hn">Honduras</option>
+                                    <option value="flag-icon-hu">Hungary</option>
+                                    <option value="flag-icon-is">Iceland</option>
+                                    <option value="flag-icon-in">India</option>
+                                    <option value="flag-icon-id">Indonesia</option>
+                                    <option value="flag-icon-ir">Iran</option>
+                                    <option value="flag-icon-iq">Iraq</option>
+                                    <option value="flag-icon-ie">Ireland</option>
+                                    <option value="flag-icon-il">Israel</option>
+                                    <option value="flag-icon-it">Italy</option>
+                                    <option value="flag-icon-jm">Jamaica</option>
+                                    <option value="flag-icon-jp">Japan</option>
+                                    <option value="flag-icon-jo">Jordan</option>
+                                    <option value="flag-icon-kz">Kazakhstan</option>
+                                    <option value="flag-icon-ke">Kenya</option>
+                                    <option value="flag-icon-ki">Kiribati</option>
+                                    <option value="flag-icon-kp">Korea (North)</option>
+                                    <option value="flag-icon-kr">Korea (South)</option>
+                                    <option value="flag-icon-kw">Kuwait</option>
+                                    <option value="flag-icon-kg">Kyrgyzstan</option>
+                                    <option value="flag-icon-la">Laos</option>
+                                    <option value="flag-icon-lv">Latvia</option>
+                                    <option value="flag-icon-lb">Lebanon</option>
+                                    <option value="flag-icon-ls">Lesotho</option>
+                                    <option value="flag-icon-lr">Liberia</option>
+                                    <option value="flag-icon-ly">Libya</option>
+                                    <option value="flag-icon-li">Liechtenstein</option>
+                                    <option value="flag-icon-lt">Lithuania</option>
+                                    <option value="flag-icon-lu">Luxembourg</option>
+                                    <option value="flag-icon-mk">North Macedonia</option>
+                                    <option value="flag-icon-mg">Madagascar</option>
+                                    <option value="flag-icon-mw">Malawi</option>
+                                    <option value="flag-icon-my">Malaysia</option>
+                                    <option value="flag-icon-mv">Maldives</option>
+                                    <option value="flag-icon-ml">Mali</option>
+                                    <option value="flag-icon-mt">Malta</option>
+                                    <option value="flag-icon-mh">Marshall
+                                        Islands</option>
+                                    <option value="flag-icon-mr">Mauritania</option>
+                                    <option value="flag-icon-mu">Mauritius</option>
+                                    <option value="flag-icon-mx">Mexico</option>
+                                    <option value="flag-icon-fm">Micronesia</option>
+                                    <option value="flag-icon-md">Moldova</option>
+                                    <option value="flag-icon-mc">Monaco</option>
+                                    <option value="flag-icon-mn">Mongolia</option>
+                                    <option value="flag-icon-me">Montenegro</option>
+                                    <option value="flag-icon-ma">Morocco</option>
+                                    <option value="flag-icon-mz">Mozambique</option>
+                                    <option value="flag-icon-mm">Myanmar</option>
+                                    <option value="flag-icon-na">Namibia</option>
+                                    <option value="flag-icon-nr">Nauru</option>
+                                    <option value="flag-icon-np">Nepal</option>
+                                    <option value="flag-icon-nl">Netherlands</option>
+                                    <option value="flag-icon-nz">New Zealand</option>
+                                    <option value="flag-icon-nc">New Caledonia</option>
+                                    <option value="flag-icon-ni">Nicaragua</option>
+                                    <option value="flag-icon-ne">Niger</option>
+                                    <option value="flag-icon-ng">Nigeria</option>
+                                    <option value="flag-icon-nu">Niue</option>
+                                    <option value="flag-icon-no">Norway</option>
+                                    <option value="flag-icon-om">Oman</option>
+                                    <option value="flag-icon-pk">Pakistan</option>
+                                    <option value="flag-icon-pw">Palau</option>
+                                    <option value="flag-icon-pa">Panama</option>
+                                    <option value="flag-icon-pg">Papua New
+                                        Guinea</option>
+                                    <option value="flag-icon-py">Paraguay</option>
+                                    <option value="flag-icon-pe">Peru</option>
+                                    <option value="flag-icon-ph">Philippines</option>
+                                    <option value="flag-icon-pl">Poland</option>
+                                    <option value="flag-icon-pt">Portugal</option>
+                                    <option value="flag-icon-qa">Qatar</option>
+                                    <option value="flag-icon-ro">Romania</option>
+                                    <option value="flag-icon-ru">Russia</option>
+                                    <option value="flag-icon-rw">Rwanda</option>
+                                    <option value="flag-icon-kn">Saint Kitts and
+                                        Nevis</option>
+                                    <option value="flag-icon-lc">Saint Lucia</option>
+                                    <option value="flag-icon-vc">Saint Vincent
+                                        and the Grenadines</option>
+                                    <option value="flag-icon-ws">Samoa</option>
+                                    <option value="flag-icon-sm">San Marino</option>
+                                    <option value="flag-icon-st">Sao Tome and
+                                        Principe</option>
+                                    <option value="flag-icon-sa">Saudi Arabia</option>
+                                    <option value="flag-icon-sn">Senegal</option>
+                                    <option value="flag-icon-rs">Serbia</option>
+                                    <option value="flag-icon-sc">Seychelles</option>
+                                    <option value="flag-icon-sl">Sierra Leone</option>
+                                    <option value="flag-icon-sg">Singapore</option>
+                                    <option value="flag-icon-sk">Slovakia</option>
+                                    <option value="flag-icon-si">Slovenia</option>
+                                    <option value="flag-icon-sb">Solomon Islands</option>
+                                    <option value="flag-icon-so">Somalia</option>
+                                    <option value="flag-icon-za">South Africa</option>
+                                    <option value="flag-icon-es">Spain</option>
+                                    <option value="flag-icon-lk">Sri Lanka</option>
+                                    <option value="flag-icon-sd">Sudan</option>
+                                    <option value="flag-icon-sr">Suriname</option>
+                                    <option value="flag-icon-sz">Eswatini</option>
+                                    <option value="flag-icon-se">Sweden</option>
+                                    <option value="flag-icon-ch">Switzerland</option>
+                                    <option value="flag-icon-sy">Syria</option>
+                                    <option value="flag-icon-tw">Taiwan</option>
+                                    <option value="flag-icon-tj">Tajikistan</option>
+                                    <option value="flag-icon-tz">Tanzania</option>
+                                    <option value="flag-icon-th">Thailand</option>
+                                    <option value="flag-icon-tl">Timor-Leste</option>
+                                    <option value="flag-icon-tg">Togo</option>
+                                    <option value="flag-icon-to">Tonga</option>
+                                    <option value="flag-icon-tt">Trinidad and
+                                        Tobago</option>
+                                    <option value="flag-icon-tn">Tunisia</option>
+                                    <option value="flag-icon-tr">Turkey</option>
+                                    <option value="flag-icon-tm">Turkmenistan</option>
+                                    <option value="flag-icon-tv">Tuvalu</option>
+                                    <option value="flag-icon-ug">Uganda</option>
+                                    <option value="flag-icon-ua">Ukraine</option>
+                                    <option value="flag-icon-ae">United Arab
+                                        Emirates</option>
+                                    <option value="flag-icon-gb">United Kingdom</option>
+                                    <option value="flag-icon-us">United States</option>
+                                    <option value="flag-icon-uy">Uruguay</option>
+                                    <option value="flag-icon-uz">Uzbekistan</option>
+                                    <option value="flag-icon-vu">Vanuatu</option>
+                                    <option value="flag-icon-va">Vatican City</option>
+                                    <option value="flag-icon-ve">Venezuela</option>
+                                    <option value="flag-icon-vn">Vietnam</option>
+                                    <option value="flag-icon-ye">Yemen</option>
+                                    <option value="flag-icon-zm">Zambia</option>
+                                    <option value="flag-icon-zw">Zimbabwe</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for=" message">Additional Message:</label><br>
+                            <textarea id="message" name="message" rows="5"
+                                cols="30"></textarea>
+                        </div>
+
+                        <fieldset>
+                            <input type="submit" value="Submit">
+                            <p class="disclaimer">
+                                By pressing the submit button, I agree to
+                                Planet-Inc comtacting me by email and/or
+                                phone to
+                                share opportunities exclusively available to
+                                Select or Enterprise customes. I also
+                                understand that any information I’ve shared in
+                                this form is subject to Planet-Inc
+                                Privacy
+                                Policy.
+                            </p>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
 
-        </div>
-        <div class="ft-brand">
-            <div class="logo">
-                <img src="../images/logoalt.svg" alt="Planet Inc Logo">
-                <h1>Planet Inc</h1>
+            <div class="content col">
+                <h1>List of requests</h1>
+                <table id="requests-table">
+                    <thead>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Message</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
-            <p class="legal">© 2020 Planet Inc. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="../js/nav.js"></script>
-    <script src="../js/contact.js"></script>
-    <script src="../js/emoji.js"></script>
-    <!-- <script src="../js/planet.js"></script> -->
-</body>
+        </section>
+
+        <footer>
+            <div class="content">
+                <div class="link-bloc">
+                    <h3>Company</h3>
+                    <div class="links">
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="link-bloc">
+                    <h3>Products</h3>
+                    <div class="links">
+                        <a href="store.html">Store</a>
+                    </div>
+                </div>
+                <div class="link-bloc">
+                    <h3>Legal</h3>
+                    <div class="links">
+                        <a href="termsofservices.html">Terms of Service</a>
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                        <a href="cookiespolicy.html">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="link-bloc">
+                    <h3>Follow Us</h3>
+                    <div class="links">
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://twitter.com/">Twitter</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://github.com/P4UL-M/Website-Planet-Inc">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ft-brand">
+                <div class="logo">
+                    <img src="../images/logoalt.svg" alt="Planet Inc Logo">
+                    <h1>Planet Inc</h1>
+                </div>
+                <p class="legal">© 2020 Planet Inc. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="../js/nav.js"></script>
+        <script src="../js/contact.js"></script>
+        <script src="../js/emoji.js"></script>
+        <!-- <script src="../js/planet.js"></script> -->
+    </body>
 
 </html>

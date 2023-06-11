@@ -241,3 +241,108 @@ textarea:focus {
     border: none;
     background: inherit;
 }
+
+th {
+    text-align: left;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tbody td {
+    /* Paragraph/Small/Regular */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0px;
+
+    /* Color/Black */
+    color: #0d0e0e;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #e1e2e3;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        flex-direction: column;
+        padding: 64px 32px;
+    }
+
+    .hd-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hd-content h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .hd-content .subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .hd-content .supportive-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    fieldset {
+        border: none;
+        flex-direction: column;
+        display: flex;
+        gap: 22px;
+
+        /* Position and size */
+        padding: 0;
+        margin: 0;
+    }
+    
+    table,
+    tbody,
+    th,
+    td,
+    tr,
+    tfoot {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    th {
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    td {
+        text-align: center;
+        padding: 0.5em;
+        border-bottom: 1px solid #ddd;
+    }
+}
